@@ -1,0 +1,108 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  z-index: 32;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.2rem;
+  border-bottom: 1px solid var(--cl-primary);
+  z-index: 23456;
+}
+.nav_btn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  margin-inline: 1rem;
+}
+.disply_on_sm {
+  display: none;
+}
+.scrolled {
+  background-color: black;
+}
+
+/* =================================== HOME ================================= */
+.home {
+  position: relative;
+  background-color: silver;
+}
+
+.home-slide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/image/bg/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.h1-2x{
+    font-size: 3rem;
+}
+.home-btn {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.slick-next {
+  display: none !important;
+}
+.slick-prev {
+  display: none !important;
+}
+
+.home-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--cl-primary);
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+.home-btn:hover {
+  border: 1px solid transparent;
+}
+.home-btn:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+/* =================================== CHECK ================================= */
+
+.check {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-block: 1.5rem;
+  background-color: white;
+  z-index: 1;
+}
+.pick-date-icon {
+  color: var(--cl-primary);
+}
+.pick-date-input{
+    color: var(--cl-primary);
+    border: none;
+    width: 100%;
+}
+.pick-date-input:hover,
+.pick-date-input:focus{
+    border: none;
+    outline: transparent;
+}

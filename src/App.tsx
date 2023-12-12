@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <Navigation onScroll={handleScroll} />
+      <Navigation handleScroll={handleScroll} />
       <Home ref={ref[0]} />
       <About ref={ref[1]} />
       <Room ref={ref[3]} />
