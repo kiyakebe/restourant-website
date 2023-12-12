@@ -1,4 +1,7 @@
 import { forwardRef } from "react";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWifi,
@@ -14,6 +17,16 @@ import img_2 from "../../assets/image/rooms/room-2.jpg";
 import img_3 from "../../assets/image/rooms/room-3.jpg";
 import img_4 from "../../assets/image/rooms/room-4.jpg";
 import img_5 from "../../assets/image/rooms/room-5.jpg";
+
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 interface CardProps {
   img_url: string;
@@ -86,6 +99,7 @@ const RoomCarS = ({ img_url }: CardProps) => {
     </div>
   );
 };
+
 interface Props {}
 
 const Room = forwardRef<HTMLDivElement, Props>(({}, ref) => {
@@ -96,6 +110,16 @@ const Room = forwardRef<HTMLDivElement, Props>(({}, ref) => {
         <p className="text-center">HOEXR LUXURY ROOMS</p>
         <h1 className="larg-font text-center">Luxury Rooms & Suites</h1>
         <div className="devider"></div>
+        <Reveal
+          keyframes={customAnimation}
+          triggerOnce
+          duration={1000}
+          cascade
+          damping={0.1}
+        >
+
+        </Reveal>
+
         <div className="rooms-grid">
           <RoomCarL img_url={img_1}/>
           <RoomCarL img_url={img_2}/>
@@ -103,6 +127,7 @@ const Room = forwardRef<HTMLDivElement, Props>(({}, ref) => {
           <RoomCarL img_url={img_4}/>
           <RoomCarS img_url={img_5}/>
         </div>
+
         <div className="devider"></div>
       </div>
     </div>

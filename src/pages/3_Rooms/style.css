@@ -13,6 +13,31 @@
     overflow: hidden;
     z-index: 1;
 }
+
+.room-card-large{
+    grid-column: span 12;
+}
+
+.room-card-small{
+    grid-column: span 12;
+}
+
+@media screen and (min-width: 768px){
+    .room-card-large{
+        grid-column: span 6;
+    }
+    
+    .room-card-small{
+        grid-column: span 6;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .room-card-small{
+        grid-column: span 3;
+    }
+}
+
 .room-card img{
     position: absolute;
     width: 100%;
@@ -23,15 +48,7 @@
 }
 .room-card:hover img{
     transform: scale(1.1);
-    filter: grayscale(50%);
-}
-
-.room-card-large{
-    grid-column: span 6;
-}
-
-.room-card-small{
-    grid-column: span 3;
+    filter: blur(2px);
 }
 
 .book-btn{
