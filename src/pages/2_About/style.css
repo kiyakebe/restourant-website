@@ -1,0 +1,10 @@
+h1{
+    font-size: 3.5rem;
+    line-height: 3rem;
+}
+.false-bg{
+    background-image: url("../../assets/image/change/side.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

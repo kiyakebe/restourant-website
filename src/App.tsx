@@ -25,6 +25,7 @@ function App() {
     <>
       <Navigation handleScroll={handleScroll} />
       <Home ref={ref[0]} />
+      <div className="devider"></div>
       <About ref={ref[1]} />
       <Room ref={ref[3]} />
       <Services ref={ref[2]} />

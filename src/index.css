@@ -26,6 +26,9 @@ body{
 .full_vh{
     height: 100vh;
 }
+.devider{
+    height: 7rem;
+}
 .w-max{
     width: max-content;
 }

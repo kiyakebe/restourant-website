@@ -12,7 +12,7 @@ import logo from "../../assets/image/logo.jpg";
 
 const customAnimation = keyframes`
   from {
-    opacity: 0.5;
+    opacity: 0;
     transform: translateY(3rem);
   }
 
@@ -37,7 +37,7 @@ const SliderCard = () => {
         >
           <img src={logo} alt="BLUE DIAMOND" style={{ width: "10rem" }} />
 
-          <h6 className="text-light fw-semibold my-5">
+          <h6 className="text-light fw-semibold my-4">
             UNIQUE PLACE AND LUXURY HOTEL
           </h6>
           <h1 className="text-light larg-font h1-2x text-center">
