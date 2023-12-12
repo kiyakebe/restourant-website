@@ -27,6 +27,7 @@ function App() {
       <Home ref={ref[0]} />
       <div className="devider"></div>
       <About ref={ref[1]} />
+      <div className="devider"></div>
       <Room ref={ref[3]} />
       <Services ref={ref[2]} />
       <Promotion />
