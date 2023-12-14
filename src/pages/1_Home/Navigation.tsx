@@ -45,7 +45,7 @@ const Navigation = ({ handleScroll }: Props) => {
           Blog
         </button>
         <button onClick={() => handleScroll(6)} className="nav_btn">
-          Contaact
+          Contact
         </button>
       </section>
       <button className="hvr-btn">BOOK NOW</button>

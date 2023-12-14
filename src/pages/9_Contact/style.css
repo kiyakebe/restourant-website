@@ -1,0 +1,92 @@
+.checkin-container {
+  background-image: url("../../assets/image/bg/booking.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.checkIn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* padding: 6rem 0;  */
+}
+.grid-item {
+  grid-column: span 2;
+}
+@media screen and (min-width: 768px) {
+  .grid-item {
+    grid-column: span 1;
+  }
+}
+
+/* ========================= hotel checkin form ============================ */
+
+.checkin-form {
+  position: relative;
+  padding: 3rem;
+  width: 100%;
+  background-color: var(--cl-secondary-light);
+  transform: none;
+}
+
+@media screen and (min-width: 768px) {
+  .checkin-form {
+    width: 80%;
+    transform: translate(0, -30%);
+  }
+}
+
+.form-lead {
+  /* color: var(--cl-secondary); */
+  z-index: 0;
+}
+.form-title {
+  color: var(--cl-primary);
+}
+.checkin-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  width: 7rem;
+  height: 0.6rem;
+  background-color: var(--cl-secondary);
+  z-index: 1;
+}
+
+.checlin-select {
+  border: 2px solid var(--cl-secondary);
+}
+
+.checkin-btn {
+  margin-top: 1rem;
+  position: relative;
+  color: white;
+  background-color: var(--cl-primary);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  z-index: 1;
+}
+.checkin-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--cl-secondary);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+.checkin-btn:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+/* ========================= hotel description ============================ */
+
+.phone-icon {
+  color: var(--cl-secondary);
+}
+.dark-text {
+  color: rgb(171, 171, 171);
+}

@@ -1,7 +1,4 @@
 import { forwardRef } from "react";
-import Reveal from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWifi,
@@ -18,16 +15,6 @@ import img_3 from "../../assets/image/rooms/room-3.jpg";
 import img_4 from "../../assets/image/rooms/room-4.jpg";
 import img_5 from "../../assets/image/rooms/room-5.jpg";
 
-const customAnimation = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
 interface CardProps {
   img_url: string;
 }
@@ -38,7 +25,7 @@ const RoomCarL = ({ img_url }: CardProps) => {
       <img src={img_url} alt="" />
       <div className="w-100 align-self-end my-3">
         <section>
-          <h2 className="text-end text-light mx-3">Junior Suite</h2>
+          <h2 className="text-end text-light mx-3 larg-font-sm">Junior Suite</h2>
           <p className="text-end text-light mx-3">150$ / NIGHT</p>
         </section>
         <section className="d-flex justify-content-between mx-3 align-items-center room-link">
@@ -72,7 +59,7 @@ const RoomCarS = ({ img_url }: CardProps) => {
       <img src={img_url} alt="" />
       <div className="w-100 align-self-end my-3">
         <section>
-          <h2 className="text-end text-light mx-3">Junior Suite</h2>
+          <h2 className="text-end text-light mx-3 larg-font-sm">Junior Suite</h2>
           <p className="text-end text-light mx-3">150$ / NIGHT</p>
         </section>
         <section className="d-flex justify-content-between mx-3 align-items-center room-link">
@@ -110,16 +97,6 @@ const Room = forwardRef<HTMLDivElement, Props>(({}, ref) => {
         <p className="text-center">HOEXR LUXURY ROOMS</p>
         <h1 className="larg-font text-center">Luxury Rooms & Suites</h1>
         <div className="devider"></div>
-        {/* <Reveal
-          keyframes={customAnimation}
-          triggerOnce
-          duration={1000}
-          cascade
-          damping={0.1}
-        >
-
-        </Reveal> */}
-
         <div className="rooms-grid">
           <RoomCarL img_url={img_1}/>
           <RoomCarL img_url={img_2}/>

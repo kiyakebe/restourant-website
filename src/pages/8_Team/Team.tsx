@@ -85,7 +85,7 @@ const Team = () => {
       <div className="team-grid">
         <Reveal
           keyframes={customAnimation}
-          duration={1500}
+          duration={1000}
           cascade
           damping={0.1}
           className="team-card"

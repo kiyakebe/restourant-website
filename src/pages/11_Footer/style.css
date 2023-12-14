@@ -1,0 +1,57 @@
+.footer {
+  --cl-footer-bg: #222222;
+  background-color: var(--cl-footer-bg);
+}
+.aspect-squer {
+  padding: 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  color: var(--cl-secondary-light);
+  border: 1px solid var(--cl-secondary-light);
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+.aspect-squer:hover {
+  border: 1px solid var(--cl-secondary);
+  background-color: var(--cl-secondary);
+}
+.info-icon {
+  color: var(--cl-secondary);
+}
+.color {
+  color: #acacac;
+}
+.sub-email{
+    border: 2px solid var(--cl-secondary);
+    outline: none;
+}
+.sub-email:focus{
+    outline: none;
+}
+.sub-btn {
+  margin: 1rem 0;
+  position: relative;
+  color: white;
+  background-color: var(--cl-primary);
+  padding: 0.2rem 1rem;
+  border: none;
+  z-index: 1;
+}
+.sub-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--cl-secondary);
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+.sub-btn:hover::before {
+  left: 0;
+  width: 100%;
+}
+.footer-bottom-section{
+    background-color: #363636;
+}

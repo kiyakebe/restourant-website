@@ -64,7 +64,7 @@ body {
   right: 0;
   width: 0;
   height: 100%;
-  background-color: orange;
+  background-color: var(--cl-secondary);
   transition: all 0.3s ease-in-out;
   z-index: -1;
 }
@@ -75,6 +75,7 @@ body {
 
 .img-hover {
   position: relative;
+  overflow: hidden;
 }
 
 .img-hover::before {
