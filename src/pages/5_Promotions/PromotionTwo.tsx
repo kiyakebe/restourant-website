@@ -20,7 +20,7 @@ const PromotionTwo = () => {
     <Reveal
       keyframes={customAnimation}
       triggerOnce
-      fraction={0.4}
+      fraction={0.2}
       duration={2000}
     >
       <div className="container-fluid bg-light-s my-5">

@@ -12,7 +12,7 @@
   grid-column: span 2;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .food-item {
     grid-column: span 1;
   }
