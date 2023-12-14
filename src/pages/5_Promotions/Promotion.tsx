@@ -7,11 +7,11 @@ const Promotion = () => {
   return (
     <div className="">
       <PromotionBanner />
-      <div className="devider"></div>
+      <div className="devider-md"></div>
       <PromotionOne />
-      <div className="devider"></div>
+      <div className="devider-md"></div>
       <PromotionTwo />
-      <div className="devider"></div>
+      <div className="devider-md"></div>
       <PromotionThree />
 
     </div>
