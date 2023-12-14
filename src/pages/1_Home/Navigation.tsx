@@ -1,10 +1,11 @@
+import { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import "./style.css";
 
 import logo from '../../assets/image/logo.jpg'
-import { useState } from "react";
 interface Props {
   handleScroll: (i: number) => void;
 }
@@ -12,10 +13,12 @@ interface Props {
 const Navigation = ({ handleScroll }: Props) => {
 
   const [navbar, setNavbar] = useState(false);
+
   const changeBackground = () => {
     if(window.scrollY > 100) setNavbar(true)
     else setNavbar(false)
   }
+
   window.addEventListener('scroll', changeBackground)
 
   return (

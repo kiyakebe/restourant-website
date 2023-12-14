@@ -21,12 +21,12 @@
 .color {
   color: #acacac;
 }
-.sub-email{
-    border: 2px solid var(--cl-secondary);
-    outline: none;
+.sub-email {
+  border: 2px solid var(--cl-secondary);
+  outline: none;
 }
-.sub-email:focus{
-    outline: none;
+.sub-email:focus {
+  outline: none;
 }
 .sub-btn {
   margin: 1rem 0;
@@ -52,6 +52,17 @@
   left: 0;
   width: 100%;
 }
-.footer-bottom-section{
-    background-color: #363636;
+.footer-bottom-section {
+  background-color: #363636;
+}
+.footer-link {
+  text-align: left;
+  border: none;
+  color: white;
+  background-color: transparent;
+  margin-inline: 1rem;
+}
+
+.footer-link-icon {
+    font-size: 0.8rem;
 }

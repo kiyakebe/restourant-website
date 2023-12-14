@@ -44,7 +44,7 @@ function App() {
       <div className="devider"></div>
       <Blog ref={ref[5]} />
       <div className="devider"></div>
-      <Footer />
+      <Footer handleScroll={handleScroll}/>
     </>
   );
 }
