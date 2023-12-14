@@ -13,6 +13,10 @@
 
 :root{
     --cl-primary: #152b36;
+    --cl-primary-light: #152b3637;
+    --cl-primary-txt: #3a484f;
+
+    --cl-secondary: #aa8453;
 }
 
 *{
@@ -34,6 +38,7 @@ body{
 }
 .larg-font{
     font-family: "gildadisplay", sans-serif;
+    /* color: var(--cl-primary); */
 }
 
 .hvr-btn{

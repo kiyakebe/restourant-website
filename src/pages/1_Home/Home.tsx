@@ -30,7 +30,6 @@ const SliderCard = () => {
       <div className="home-slide d-flex flex-column align-items-center ">
         <Reveal
           keyframes={customAnimation}
-          triggerOnce
           duration={1000}
           cascade
           damping={0.1}

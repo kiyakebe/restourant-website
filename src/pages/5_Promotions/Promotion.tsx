@@ -1,7 +1,12 @@
+import PromotionBanner from "./PromotionBanner"
+import PromotionOne from "./PromotionOne"
 
 const Promotion = () => {
   return (
-    <div className="full_vh">Promotion</div>
+    <div className="">
+      <PromotionBanner />
+      <PromotionOne />
+    </div>
   )
 }
 

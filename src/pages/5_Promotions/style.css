@@ -1,0 +1,44 @@
+
+.promo-banner{
+    --banner-height: 75vh;
+    background-image: url("../../assets/image/bg/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: var(--banner-height);
+}
+.promo{
+    height: var(--banner-height);
+}
+
+.promo-banner h1{
+    color: white;
+    font-size: clamp(1.2rem, 1.2rem + 3vw, 3rem);
+}
+.promo-banner h5{
+    color: whitesmoke;
+}
+.promo-play{
+    color: var(--cl-secondary);
+    font-size: 2rem;
+    padding: 3rem;
+    aspect-ratio: 1/1;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feature-img-container{
+    /* transform: translateY(-4rem); */
+}
+.service-description{
+    height: 100%;
+    width: 100%;
+    background-color: var(--cl-primary-light);
+}
+
+.promo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

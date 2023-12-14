@@ -110,7 +110,7 @@ const Room = forwardRef<HTMLDivElement, Props>(({}, ref) => {
         <p className="text-center">HOEXR LUXURY ROOMS</p>
         <h1 className="larg-font text-center">Luxury Rooms & Suites</h1>
         <div className="devider"></div>
-        <Reveal
+        {/* <Reveal
           keyframes={customAnimation}
           triggerOnce
           duration={1000}
@@ -118,7 +118,7 @@ const Room = forwardRef<HTMLDivElement, Props>(({}, ref) => {
           damping={0.1}
         >
 
-        </Reveal>
+        </Reveal> */}
 
         <div className="rooms-grid">
           <RoomCarL img_url={img_1}/>

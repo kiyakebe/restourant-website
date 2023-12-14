@@ -1,0 +1,59 @@
+.service-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(15rem, auto);
+    gap: 20px;
+}
+
+.service-card{
+    position: relative;
+    border: 1px solid var(--cl-primary-light);
+    grid-column: span 6;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+.service-title-color{
+    color: var(--cl-primary);
+}
+.service-txt-color{
+    color: var(--cl-primary-txt);
+}
+.service-icon{
+    font-size: 2.5rem;
+}
+.service-card:hover{
+    background-color: var(--cl-primary);
+}
+.service-card:hover .service-title-color,
+.service-card:hover .service-txt-color{
+    color: whitesmoke;
+}
+.service-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6rem;
+    height: 0.6rem;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    background-color: white;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+}
+
+.service-card:hover .service-card::before{
+    background-color: white;
+}
+
+@media screen and (min-width: 768px){
+    .service-card{
+        grid-column: span 3;
+    }
+}
+
+@media screen and (min-width: 980px){
+    .service-card{
+        grid-column: span 2;
+    }
+}

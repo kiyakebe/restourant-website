@@ -29,13 +29,21 @@ function App() {
       <About ref={ref[1]} />
       <div className="devider"></div>
       <Room ref={ref[3]} />
+      <div className="devider"></div>
       <Services ref={ref[2]} />
+      <div className="devider"></div>
       <Promotion />
+      <div className="devider"></div>
       <Testimonial ref={ref[4]} />
+      <div className="devider"></div>
       <Food />
+      <div className="devider"></div>
       <Team />
+      <div className="devider"></div>
       <Contact ref={ref[6]} />
+      <div className="devider"></div>
       <Blog ref={ref[5]} />
+      <div className="devider"></div>
       <Footer />
     </>
   );
