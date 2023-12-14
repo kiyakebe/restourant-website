@@ -33,13 +33,21 @@ body {
 .devider {
   height: 7rem;
 }
+.devider-md {
+  height: 3rem;
+}
 .w-max {
   width: max-content;
 }
 .larg-font {
   font-family: "gildadisplay", sans-serif;  
   font-size: clamp(1.2rem, 1.2rem + 3vw, 3rem);
-}   
+}
+
+.larg-font-sm{
+    font-family: "gildadisplay", sans-serif;
+    font-size: clamp(1rem, 1rem + 1vw, 1.5rem);
+}
 
 .hvr-btn {
   position: relative;
@@ -67,7 +75,6 @@ body {
 
 .img-hover {
   position: relative;
-  /* z-index: 1; */
 }
 
 .img-hover::before {

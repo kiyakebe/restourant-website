@@ -26,7 +26,7 @@ const Navigation = ({ handleScroll }: Props) => {
         <img src={logo} alt="BLUE Diamond" style={{width: '7rem'}}/>
       </section>
       <section>
-        <button onClick={() => handleScroll(0)} className="nav_btn">
+        <button onClick={() => handleScroll(0)} className="nav_btn">  
           Home
         </button>
         <button onClick={() => handleScroll(1)} className="nav_btn">
