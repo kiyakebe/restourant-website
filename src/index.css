@@ -37,9 +37,9 @@ body {
   width: max-content;
 }
 .larg-font {
-  font-family: "gildadisplay", sans-serif;
-  /* color: var(--cl-primary); */
-}
+  font-family: "gildadisplay", sans-serif;  
+  font-size: clamp(1.2rem, 1.2rem + 3vw, 3rem);
+}   
 
 .hvr-btn {
   position: relative;
@@ -99,3 +99,4 @@ body {
     transform: translateY(150%);
   }
 }
+

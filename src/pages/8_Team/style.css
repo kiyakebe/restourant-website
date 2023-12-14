@@ -1,0 +1,91 @@
+/* ========================= layout and card  =========================== */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.team-card {
+  grid-column: span 4;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .team-card {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .team-card {
+    grid-column: span 1;
+  }
+}
+
+
+/* ==================== team card design ================== */
+
+.team-img-container {
+    position: relative;
+  overflow: hidden;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.team-card:hover .team-img {
+  transform: scale(1.1);
+}
+.team-link {
+  font-family: "gildadisplay", sans-serif;
+  text-decoration: none;
+  color: var(--cl-primary);
+  transition: all 0.4s ease;
+}
+.team-link:hover{
+    color: var(--cl-secondary);
+}
+.team-discription{
+    margin-left: 2rem;
+    position: relative;
+}
+.team-discription::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    height: 100%;
+    width: 0.3rem;
+    background-color: var(--cl-secondary);
+}
+
+.team-role{
+    position: relative;
+}
+.team-role::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1.3rem;
+    height: 100%;
+    width: 0.1rem;
+    background-color: var(--cl-secondary);
+}
+
+/* ======================== social icons ========================= */
+.social-icons-container{
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    z-index: 12;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 0.4s ease;
+}
+.team-card:hover .social-icons-container{
+    transform: scaleY(1);
+}
