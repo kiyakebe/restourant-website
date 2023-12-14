@@ -1,5 +1,5 @@
 .rooms{
-    background-color: rgb(255, 248, 240);
+    background-color: var(--cl-secondary-light);
 }
 .rooms-grid{
     display: grid;

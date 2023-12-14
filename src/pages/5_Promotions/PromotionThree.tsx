@@ -1,7 +1,7 @@
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-import feature_img from "../../assets/image/features/feature-1.jpg";
+import feature_img from "../../assets/image/features/feature-3.jpg";
 
 const customAnimation = keyframes`
   from {
@@ -15,7 +15,7 @@ const customAnimation = keyframes`
   }
 `;
 
-const PromotionOne = () => {
+const PromotionThree = () => {
   return (
     <Reveal
       keyframes={customAnimation}
@@ -31,8 +31,8 @@ const PromotionOne = () => {
             </div>
 
             <div className="w-100 d-flex flex-column justify-content-center align-items-cente service-description">
-              <h6 className="">MODERN</h6>
-              <h1 className="larg-font my-4">Fitness Center</h1>
+              <h6 className="">EXPERIENCES</h6>
+              <h1 className="larg-font my-4">Spa Center</h1>
               <p className="mb-3">
                 Restaurant inilla duiman at elit finibus viverra nec a lacus
                 themo the nesudea seneoice misuscipit non sagie the fermen
@@ -48,4 +48,4 @@ const PromotionOne = () => {
   );
 };
 
-export default PromotionOne;
+export default PromotionThree;

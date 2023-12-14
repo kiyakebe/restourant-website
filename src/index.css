@@ -1,66 +1,101 @@
 @font-face {
-    font-family: "gildadisplay";
-    src: url("assets/fonts/gildadisplay-regular.woff2")
-      format("woff2-variations");
-    font-display: swap;
+  font-family: "gildadisplay";
+  src: url("assets/fonts/gildadisplay-regular.woff2") format("woff2-variations");
+  font-display: swap;
 }
 @font-face {
-    font-family: "work-sans";
-    src: url("assets/fonts/WorkSans.woff2") format("woff2-variations");
-    font-weight: 100 900;
-    font-display: swap;
+  font-family: "work-sans";
+  src: url("assets/fonts/WorkSans.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --cl-primary: #152b36;
+  --cl-primary-light: #152b3637;
+  --cl-primary-txt: #3a484f;
+
+  --cl-secondary: #aa8453;
+  --cl-secondary-light: rgb(255, 248, 240);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "work-sans", sans-serif;
+}
+.full_vh {
+  height: 100vh;
+}
+.devider {
+  height: 7rem;
+}
+.w-max {
+  width: max-content;
+}
+.larg-font {
+  font-family: "gildadisplay", sans-serif;
+  /* color: var(--cl-primary); */
+}
+
+.hvr-btn {
+  position: relative;
+  color: white;
+  background-color: var(--cl-primary);
+  padding: 0.8rem 1.2rem;
+  border: none;
+  z-index: 1;
+}
+.hvr-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: orange;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+.hvr-btn:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.img-hover {
+  position: relative;
+  /* z-index: 1; */
+}
+
+.img-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(
+    transparent,
+    rgba(255, 255, 255, 0.26) 80%,
+    transparent
+  );
+
+  transform: translateY(-100%);
+  z-index: 1;
+}
+
+.img-hover:hover.img-hover::before {
+  animation: animation 0.3s linear forwards;
+}
+
+@keyframes animation {
+  from {
+    transform: translateY(0);
   }
-
-:root{
-    --cl-primary: #152b36;
-    --cl-primary-light: #152b3637;
-    --cl-primary-txt: #3a484f;
-
-    --cl-secondary: #aa8453;
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: "work-sans", sans-serif;
-}
-.full_vh{
-    height: 100vh;
-}
-.devider{
-    height: 7rem;
-}
-.w-max{
-    width: max-content;
-}
-.larg-font{
-    font-family: "gildadisplay", sans-serif;
-    /* color: var(--cl-primary); */
-}
-
-.hvr-btn{
-    position: relative;
-    color: white;
-    background-color: var(--cl-primary);
-    padding: 0.8rem 1.2rem;
-    border: none;
-    z-index: 1;
-}
-.hvr-btn::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-    background-color: orange;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-}
-.hvr-btn:hover::before{
-    left: 0;
-    width: 100%;
+  to {
+    transform: translateY(150%);
+  }
 }
