@@ -28,7 +28,7 @@ const Footer = ({ handleScroll }: Props) => {
         <div className="row py-5">
           <div className="col-12 col-md-4 my-3">
             <img src={img} alt="LOGO" className="w-25" />
-            <p className="fs-7 my-5">
+            <p className="fs-7 my-5 color">
               Welcome to the best five-star deluxe hotel in New York. Hotel
               elementum sesue the aucan vestibulum aliquam justo in sapien
               rutrum volutpat.
@@ -63,7 +63,7 @@ const Footer = ({ handleScroll }: Props) => {
 
           <div className="col-12 col-md-2">
             <h6 className="larg-font-sm my-4">Services Links</h6>
-            <section className="d-flex flex-column justify-content-start ">
+            <section className="d-flex flex-column justify-content-start">
               <button onClick={() => handleScroll(0)} className="footer-link my-1">
                 <FontAwesomeIcon
                   icon={faLink}

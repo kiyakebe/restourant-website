@@ -1,5 +1,6 @@
 .footer {
   --cl-footer-bg: #222222;
+  --cl-text: #acacac;
   background-color: var(--cl-footer-bg);
 }
 .aspect-squer {
@@ -19,7 +20,7 @@
   color: var(--cl-secondary);
 }
 .color {
-  color: #acacac;
+  color: var(--cl-text);
 }
 .sub-email {
   border: 2px solid var(--cl-secondary);
@@ -58,7 +59,7 @@
 .footer-link {
   text-align: left;
   border: none;
-  color: white;
+  color: var(--cl-text);
   background-color: transparent;
   margin-inline: 1rem;
 }

@@ -5,6 +5,7 @@ header {
   transition: all 0.5s ease-in-out;
   z-index: 32;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -13,17 +14,87 @@ header {
   border-bottom: 1px solid var(--cl-primary);
   z-index: 23456;
 }
+
+.disply_on_sm {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
+.scrolled {
+  background-color: black;
+}
+
+.hide-book-btn{
+  display: none;
+}
+
+
+/* ============= mobile nav ============== */
+
+
+.nav-links-container{
+  position: absolute;
+  top: 0;
+  right: -18rem;
+  height: 100vh;
+  width: 18rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggle-nav {
+  right: 0;
+}
+
 .nav_btn {
   border: none;
   color: white;
+  text-align: left;
   background-color: transparent;
-  margin-inline: 1rem;
+  margin-inline: 0.5rem;
+  padding: 1rem;
+  transition: all 0.5s ease;
 }
-.disply_on_sm {
-  display: none;
+.nav_btn:hover{
+  color: var(--cl-secondary);
 }
-.scrolled {
-  background-color: black;
+.bars{
+  padding: 0.8rem 1.2rem;
+}
+.cancel{
+  top: 0.6rem;
+  right: 2rem;
+  position: absolute;
+  }
+
+
+/* =========================== */
+
+
+@media screen and (min-width: 922px) {
+  .disply_on_sm {
+    display: none;
+  }
+
+  .nav_btn {
+    background-color: transparent;
+    margin-inline: 0.5rem;
+  }
+
+  .nav-links-container{
+    position: relative;
+    top: auto;
+    right: auto;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    display: block;
+  }  
 }
 
 /* =================================== HOME ================================= */
@@ -43,8 +114,8 @@ header {
   background-position: center;
   background-size: cover;
 }
-.h1-2x{
-    font-size: 3rem;
+.h1-2x {
+  font-size: 3rem;
 }
 .home-btn {
   position: relative;
@@ -85,24 +156,32 @@ header {
 /* =================================== CHECK ================================= */
 
 .check {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+
   padding-block: 1.5rem;
   background-color: white;
   z-index: 1;
 }
+
+@media screen and (min-width: 768px) {
+  .check {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+
 .pick-date-icon {
   color: var(--cl-primary);
 }
-.pick-date-input{
-    color: var(--cl-primary);
-    border: none;
-    width: 100%;
+.pick-date-input {
+  color: var(--cl-primary);
+  border: none;
+  width: 100%;
 }
 .pick-date-input:hover,
-.pick-date-input:focus{
-    border: none;
-    outline: transparent;
+.pick-date-input:focus {
+  border: none;
+  outline: transparent;
 }

@@ -52,7 +52,7 @@ const About = forwardRef<HTMLDivElement, Props>(({}, ref) => {
           fraction={0.3}
           className="col-12 col-md-6 h-100 p-5"
         >
-          <div className="about-images w-100 h-100">
+          <div className="about-images w-100 h-100 hide-on-sm">
             <div>
               <img src={decoration_1} alt="" className="decor decor_1" />
               <img src={decoration_6} alt="" className="decor decor_2" />
