@@ -60,9 +60,9 @@ const Navigation = ({ handleScroll }: Props) => {
   const [windowSize, setWindowSize] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth > 992) setWindowSize(false);
+    if (window.outerWidth > 992) setWindowSize(false);
     else setWindowSize(true);
-  });
+  }, []);
 
   const changeBackground = () => {
     if (window.scrollY > 100) setNavbar(true);
@@ -70,8 +70,9 @@ const Navigation = ({ handleScroll }: Props) => {
   };
 
   const handleResize = () => {
-    if (window.innerWidth > 992) setWindowSize(false);
+    if (window.outerWidth > 992) setWindowSize(false);
     else setWindowSize(true);
+    console.log(window.outerWidth);
   };
 
   window.addEventListener("resize", handleResize);
@@ -79,7 +80,7 @@ const Navigation = ({ handleScroll }: Props) => {
 
   return (
     <header className={navbar ? "scrolled" : ""}>
-      <nav className={`container-sm nav`}>
+      <nav className={`container-md nav px-2`}>
         <section>
           <img src={logo} alt="BLUE Diamond" style={{ width: "7rem" }} />
         </section>

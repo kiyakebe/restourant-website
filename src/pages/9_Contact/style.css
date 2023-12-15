@@ -22,13 +22,19 @@
 
 .checkin-form {
   position: relative;
-  padding: 3rem;
+  padding: 2rem;
   width: 100%;
   background-color: var(--cl-secondary-light);
   transform: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  .checkin-form {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
   .checkin-form {
     width: 80%;
     transform: translate(0, -30%);

@@ -13,7 +13,7 @@ const CheckIn = forwardRef<HTMLDivElement, Props>(({}, ref) => {
       <div className="devider"></div>
 
       <div className="checkin-container">
-        <div ref={ref} className="container-md checkIn text-light">
+        <div ref={ref} className="container-lg checkIn text-light">
           <div className="grid-item d-flex justify-content-center py-5 py-md-2">
             <form className="checkin-form">
               <p className="form-lead m-0">ROOMS & SUITES</p>

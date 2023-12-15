@@ -26,7 +26,7 @@ const Footer = ({ handleScroll }: Props) => {
     <div className="container-fluid footer text-light ">
       <div className="container-md">
         <div className="row py-5">
-          <div className="col-12 col-md-4 my-3">
+          <div className="col-12 col-lg-4 col-md-6 my-3">
             <img src={img} alt="LOGO" className="w-25" />
             <p className="fs-7 my-5 color">
               Welcome to the best five-star deluxe hotel in New York. Hotel
@@ -61,7 +61,7 @@ const Footer = ({ handleScroll }: Props) => {
             </span>
           </div>
 
-          <div className="col-12 col-md-2">
+          <div className="col-12 col-lg-2 col-md-6">
             <h6 className="larg-font-sm my-4">Services Links</h6>
             <section className="d-flex flex-column justify-content-start">
               <button onClick={() => handleScroll(0)} className="footer-link my-1">
@@ -116,7 +116,7 @@ const Footer = ({ handleScroll }: Props) => {
             </section>
           </div>
 
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-lg-3 col-md-6">
             <h6 className="larg-font-sm my-4">Information</h6>
             <div className="d-flex">
               <FontAwesomeIcon
@@ -148,7 +148,7 @@ const Footer = ({ handleScroll }: Props) => {
             </div>
           </div>
 
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-lg-3 col-md-6">
             <h6 className="larg-font-sm my-4">Newsletter</h6>
             <p className="color">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et,

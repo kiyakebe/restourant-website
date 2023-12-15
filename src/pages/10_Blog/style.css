@@ -1,16 +1,22 @@
 .blog {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
 }
 
 .blog-card {
-  grid-column: span 3;
+  grid-column: span 6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .blog-card {
-    grid-column: span 1;
+    grid-column: span 3;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blog-card {
+    grid-column: span 2;
   }
 }
 
