@@ -19,22 +19,19 @@ header {
   color: white;
   font-size: 2rem;
   cursor: pointer;
-
 }
 
 .scrolled {
   background-color: black;
 }
 
-.hide-book-btn{
+.hide-book-btn {
   display: none;
 }
 
-
 /* ============= mobile nav ============== */
 
-
-.nav-links-container{
+.nav-links-container {
   position: absolute;
   top: 0;
   right: -18rem;
@@ -53,28 +50,43 @@ header {
 
 .nav_btn {
   border: none;
-  color: white;
+  color: #acacac;
+  font-weight: 500;
   text-align: left;
   background-color: transparent;
   margin-inline: 0.5rem;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   transition: all 0.5s ease;
+  border-bottom: 1px solid #4a4a4a;
 }
-.nav_btn:hover{
+.nav_btn:hover {
   color: var(--cl-secondary);
 }
-.bars{
+.bars {
   padding: 0.8rem 1.2rem;
 }
-.cancel{
+.cancel {
   top: 0.6rem;
   right: 2rem;
   position: absolute;
-  }
+}
+.social-icon{
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+}
 
+.nav-social-icons{
+  padding: 1rem;
+  border: 1px solid var(--cl-secondary-light);
+}
+
+/* ================= nav contact =================== */
+.nav-contact-icon{
+  color: var(--cl-secondary);
+}
 
 /* =========================== */
-
 
 @media screen and (min-width: 922px) {
   .disply_on_sm {
@@ -84,9 +96,11 @@ header {
   .nav_btn {
     background-color: transparent;
     margin-inline: 0.5rem;
+
+    border-bottom: none;
   }
 
-  .nav-links-container{
+  .nav-links-container {
     position: relative;
     top: auto;
     right: auto;
@@ -94,7 +108,7 @@ header {
     width: auto;
     background-color: transparent;
     display: block;
-  }  
+  }
 }
 
 /* =================================== HOME ================================= */

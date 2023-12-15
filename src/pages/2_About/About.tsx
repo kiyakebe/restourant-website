@@ -50,9 +50,9 @@ const About = forwardRef<HTMLDivElement, Props>(({}, ref) => {
           triggerOnce
           duration={1000}
           fraction={0.3}
-          className="col-12 col-md-6 h-100 p-5"
+          className="col-12 col-lg-6 h-100 p-5 hide-on-sm"
         >
-          <div className="about-images w-100 h-100 hide-on-sm">
+          <div className="about-images w-100 h-100">
             <div>
               <img src={decoration_1} alt="" className="decor decor_1" />
               <img src={decoration_6} alt="" className="decor decor_2" />
@@ -72,7 +72,7 @@ const About = forwardRef<HTMLDivElement, Props>(({}, ref) => {
           triggerOnce
           duration={1000}
           fraction={0.3}
-          className="col-12 col-md-6 pe-5"
+          className="col-12 col-lg-6 pe-5"
         >
           <div>
             <p className="fs-5">HOEXR LUXURY HOTEL</p>
