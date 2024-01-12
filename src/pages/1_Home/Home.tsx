@@ -10,6 +10,10 @@ import Check from "./Check";
 
 import logo from "../../assets/image/logo.jpg";
 
+import img_1 from "../../assets/image/hero/hero1.jpg"
+import img_2 from "../../assets/image/hero/hero2.jpg"
+import img_3 from "../../assets/image/hero/hero3.jpg"
+
 const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -22,12 +26,17 @@ const customAnimation = keyframes`
   }
 `;
 
-interface Props {}
+interface Props{}
 
-const SliderCard = () => {
+interface CardProps {
+  url: string
+}
+
+const SliderCard = ({url}: CardProps) => {
   return (
     <div className="home-slide-container">
-      <div className="home-slide d-flex flex-column align-items-center ">
+      <img src={url} alt="" className="hero-bg-img"/>
+      <div className="home-slide d-flex flex-column align-items-center">
         <Reveal
           keyframes={customAnimation}
           duration={1000}
@@ -62,11 +71,12 @@ const Home = forwardRef<HTMLDivElement, Props>(({}, ref) => {
   return (
     <div ref={ref} className="full_vh home w-100 bg-blac aaaa">
       <Slider {...settings} className="p-0">
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
-        <SliderCard />
+        <SliderCard url={img_1}/>
+        <SliderCard url={img_2}/>
+        <SliderCard url={img_3}/>
+        <SliderCard url={img_1}/>
+        <SliderCard url={img_2}/>
+        <SliderCard url={img_3}/>
       </Slider>
       <Check />
     </div>
