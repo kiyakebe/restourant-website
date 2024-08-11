@@ -44,7 +44,6 @@ const Services = forwardRef<HTMLDivElement, Props>(({}, ref) => {
     <div ref={ref} className=" container-md service">
       <h6 className="text-center mb-3">HOEXR SERVICES</h6>
       <h1 className="larg-font text-center">Hotel Facilities</h1>
-
       <div className="devider"></div>
 
       {/* <Reveal

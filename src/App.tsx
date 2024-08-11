@@ -14,9 +14,11 @@ import { useRef } from "react";
 import Navigation from "./pages/1_Home/Navigation";
 
 function App() {
+
   const ref = Array.from({ length: 7 }, () =>
     useRef<HTMLDivElement | null>(null)
   );
+
   const handleScroll = (i: number) => {
     ref[i]?.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -24,6 +26,7 @@ function App() {
   return (
     <>
       <Navigation handleScroll={handleScroll} />
+      
       <Home ref={ref[0]} />
       <div className="devider"></div>
       <About ref={ref[1]} />
@@ -44,6 +47,7 @@ function App() {
       <div className="devider"></div>
       <Blog ref={ref[5]} />
       <div className="devider"></div>
+
       <Footer handleScroll={handleScroll}/>
     </>
   );
