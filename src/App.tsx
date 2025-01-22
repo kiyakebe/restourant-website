@@ -1,17 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./pages/1_Home/Home";
-import About from "./pages/2_About/About";
-import Room from "./pages/3_Rooms/Room";
-import Services from "./pages/4_Facilities/Services";
-import Promotion from "./pages/5_Promotions/Promotion";
-import Testimonial from "./pages/6_Testimonials/Testimonial";
-import Food from "./pages/7_Foods/Food";
-import Team from "./pages/8_Team/Team";
-import CheckIn from "./pages/9_Contact/CheckIn";
-import Blog from "./pages/10_Blog/Blog";
-import Footer from "./pages/11_Footer/Footer";
+import Home from "./components/1_Home/Home";
+import About from "./components/2_About/About";
+import Room from "./components/3_Rooms/Room";
+import Services from "./components/4_Facilities/Services";
+import Promotion from "./components/5_Promotions/Promotion";
+import Testimonial from "./components/6_Testimonials/Testimonial";
+import Food from "./components/7_Foods/Food";
+import Team from "./components/8_Team/Team";
+import CheckIn from "./components/9_Contact/CheckIn";
+import Blog from "./components/10_Blog/Blog";
+import Footer from "./components/11_Footer/Footer";
+import Navigation from "./components/1_Home/Navigation";
+
 import { useRef } from "react";
-import Navigation from "./pages/1_Home/Navigation";
 
 function App() {
 

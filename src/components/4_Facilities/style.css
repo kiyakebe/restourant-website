@@ -22,7 +22,7 @@
     font-size: 2.5rem;
 }
 .service-card:hover{
-    background-color: var(--cl-primary);
+    background-color: var(--cl-secondary);
 }
 .service-card:hover .service-title-color,
 .service-card:hover .service-txt-color{

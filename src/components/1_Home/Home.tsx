@@ -6,27 +6,22 @@ import { keyframes } from "@emotion/react";
 import "slick-carousel/slick/slick.css";
 import "./style.css";
 
-import Check from "./Check";
 
-import logo from "../../assets/image/logo.jpg";
+// import logo from "../../assets/image/logo.jpg";
 
 import img_1 from "../../assets/image/hero/hero1.jpg"
 import img_2 from "../../assets/image/hero/hero2.jpg"
-import img_3 from "../../assets/image/hero/hero3.jpg"
 
 const customAnimation = keyframes`
   from {
     opacity: 0;
     transform: translateY(3rem);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 `;
-
-interface Props{}
 
 interface CardProps {
   url: string
@@ -43,12 +38,12 @@ const SliderCard = ({url}: CardProps) => {
           cascade
           damping={0.1}
         >
-          <img src={logo} alt="BLUE DIAMOND" style={{ width: "10rem" }} />
+          {/* <img src={logo} alt="BLUE DIAMOND" style={{ width: "10rem" }} /> */}
 
           <h6 className="text-light fw-semibold my-4">
             UNIQUE PLACE AND LUXURY HOTEL
           </h6>
-          <h1 className="text-light larg-font h1-2x text-center">
+          <h1 className="text-light larg-font  text-center">
             LIFE ENJOY WITH <br /> THE GREATEST MOMENTS
           </h1>
           <button className="home-btn my-3">ROOMS & SUITS</button>
@@ -58,7 +53,7 @@ const SliderCard = ({url}: CardProps) => {
   );
 };
 
-const Home = forwardRef<HTMLDivElement, Props>(({}, ref) => {
+const Home = forwardRef<HTMLDivElement>(({}, ref) => {
   const settings = {
     infinite: true,
     slidesToShow: 1,
@@ -73,12 +68,8 @@ const Home = forwardRef<HTMLDivElement, Props>(({}, ref) => {
       <Slider {...settings} className="p-0">
         <SliderCard url={img_1}/>
         <SliderCard url={img_2}/>
-        <SliderCard url={img_3}/>
-        <SliderCard url={img_1}/>
-        <SliderCard url={img_2}/>
-        <SliderCard url={img_3}/>
       </Slider>
-      <Check />
+      {/* <Check /> */}
     </div>
   );
 });
